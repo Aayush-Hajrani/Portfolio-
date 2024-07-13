@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <nav>
+
+      <div class="name">Aayush</div>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="section">
+
+      <div class="leftsection">
+        Hey,My name is
+        <span class="red">Aayush</span>
+        <div>and I am a passionate</div>
+        <span id="element"> Frontend Developer</span>
+      </div>
+
+      <div class="rightsection">
+        <img src="img/WhatsApp Image 2024-06-29 at 11.33.45_02018dc8.jpg">
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- ---------------------------------------------------ABOUT------------------------------------------ -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <img src="img/WhatsApp Image 2024-06-29 at 11.33.45_12fcfa32.jpg">
+        </div>
+        <div class="col-2">
+          <h1 class="title">About me</h1>
+          <p class="about-para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem distinctio, optio ratione sapiente eum
+            omnis nulla hic repellendus recusandae nobis laboriosam tempore praesentium mollitia explicabo beatae iste
+            blanditiis quisquam. Alias, veritatis in itaque animi perferendis praesentium, fugiat suscipit officiis rem
+            voluptas numquam dolorem ratione molestias esse nesciunt impedit eaque asperiores aperiam recusandae eos,
+            officia eum?
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skill',event)">Skills</p>
+            <p class="tab-links" onclick="opentab('Education',event)">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skill">
+            <ul>
+              <li><span>responsive web design</span><br> Creating responsive websites using HTML,CSS & javascript</li>
+              <li><span>interactive user interfaces</span><br> Building dynamic user interfaces using javascript</li>
+              <li><span>custom css styling</span><br> Designing unique web layouts with custom css</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>secondary education</span><br> Infant jesus school, Graduated:2020</li>
+              <li><span>higher secondary education</span><br> Infant jesus school, Graduated:2022</li>
+              <li><span>bachelor of computer applications</span><br> Chimanbhai patel insitute,Expected graduation:2025
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------------services--------------------------------------------- -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="title">My services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2> Web Design </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, recusandae. Iusto similique ullam
+            animi in nostrum minus, molestias a iure voluptas nesciunt suscipit incidunt sapiente </p>
+          <a href="#"> Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX Design </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, recusandae. Iusto similique ullam
+            animi in nostrum minus, molestias a iure voluptas nesciunt suscipit incidunt sapiente</p>
+          <a href="#"> Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, recusandae. Iusto similique ullam
+            animi in nostrum minus, molestias a iure voluptas nesciunt suscipit incidunt sapiente p>
+            <a href="#"> Learn more</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------------------------------------portfolio-------------------------------------- -->
+
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="title">My Work</h1>
+      <div class="work-list">
+
+        <div class="work">
+          <img src="img/social.jpg">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>the app connects you to the talented people around the world.
+              download it from playstore.
+            </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="img/music.jpg">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>the app connects you to the talented people around the world.
+              download it from playstore.
+            </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="img/video.jpg">
+          <div class="layer">
+            <h3>video App</h3>
+            <p>the app connects you to the talented people around the world.
+              download it from playstore.
+            </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+
+
+
+  <!-- ----------------------------contact------------------------------------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+
+        <div class="contact-left">
+          <h1 class="title">Contact <span class="red">Me </span></h1>
+          <h3>lets work together</h3>
+          <p class="contact-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis facere
+            quaerat totam ipsum perferendis deleniti, non corrupti assumenda dolore modi omnis laboriosam necessitatibus
+            animi! Iste fuga quidem et repellendus nulla, voluptatibus aliquam amet?</p>
+          <p class="ct-para"> <i class="fas fa-paper-plane"></i> contact@example.com</p>
+          <p> <i class="fas fa-phone-square-alt"> </i> 1234567890</p>
+
+          <div class="social-icons">
+            <a href="https://facebook.com/"> <i class="fab fa-facebook"></i> </a>
+            <a href="#"> <i class="fab fa-twitter-square"></i> </a>
+            <a href="#"> <i class="fab fa-instagram"></i> </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> </a>
+          </div>
+          <a class="btn btn2" href="img/Resume.pdf" download>Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" id="contactform" action="https://formspree.io/f/mdknkkwa" method="post">
+            <input type="text" name="name" id="name" placeholder="your name" required>
+            <input type="email" name="email" id="email" placeholder="your email" required>
+            <textarea name="message" rows="6" id="message" placeholder="your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="submit-message"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p> copyright &copy; Aayush <i class="fas fa-heart"></i> </p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://kit.fontawesome.com/ae38caefbb.js" crossorigin="anonymous"></script>
+
+
+  <script src="script.js"></script>
+
+  <script>
+
+  </script>
+
+
+
+</body>
+
+</html>

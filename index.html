@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <nav>
+
+      <div class="name">Aayush</div>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="section">
+
+      <div class="leftsection">
+        Hey,My name is
+        <span class="red">Aayush</span>
+        <div>and I am a passionate</div>
+        <span id="element"> Frontend Developer</span>
+      </div>
+
+      <div class="rightsection">
+        <img src="img/WhatsApp Image 2024-06-29 at 11.33.45_02018dc8.jpg">
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- ---------------------------------------------------ABOUT------------------------------------------ -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <img src="img/WhatsApp Image 2024-06-29 at 11.33.45_12fcfa32.jpg">
+        </div>
+        <div class="col-2">
+          <h1 class="title">About me</h1>
+          <p class="about-para">
+            I am a dedicated BCA student with a passion for front-end development. Proficient in HTML, CSS, JavaScript, and Bootstrap, I specialize in creating responsive and user-friendly web interfaces. Through hands-on projects and coursework, I have honed my skills in crafting visually appealing designs that enhance user experience. Eager to apply my technical knowledge and creativity to contribute effectively in a dynamic work environment.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skill',event)">Skills</p>
+            <p class="tab-links" onclick="opentab('Education',event)">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skill">
+            <ul>
+              <li><span>responsive web design</span><br> Creating responsive websites using HTML,CSS & javascript</li>
+              <li><span>interactive user interfaces</span><br> Building dynamic user interfaces using javascript</li>
+              <li><span>custom css styling</span><br> Designing unique web layouts with custom css</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>secondary education</span><br> Infant jesus school, Graduated:2020</li>
+              <li><span>higher secondary education</span><br> Infant jesus school, Graduated:2022</li>
+              <li><span>bachelor of computer applications</span><br> Chimanbhai patel insitute,Expected graduation:2025
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------------services--------------------------------------------- -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="title">My services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-expand-arrows-alt"></i>
+          <h2> Responsive Web Design </h2>
+          <p>I specialize in creating websites that provide an optimal viewing experience across a wide range of devices, from desktop computers to mobile phones. Using the latest techniques in HTML, CSS, and JavaScript, I ensure that your website is fully responsive, meaning it will adapt seamlessly to different screen sizes and resolutions. </p>
+        </div>
+
+        <div>
+          <i class="fas fa-bolt"></i>
+          <h2>Performance Optimization</h2>
+          <p>I offer performance optimization services to ensure your website loads quickly and runs smoothly. By analyzing and fine-tuning various aspects such as image sizes, script loading times, and server response times, I can significantly reduce page load times and enhance overall site performance. This not only provides a better user experience but also improves your site's SEO and increases user engagement.
+          </p>
+          
+        </div>
+
+        <div>
+          <i class="fas fa-laptop-code"></i>
+          <h2>UI/UX Dsign </h2>
+          <p>Great design is about more than just aesthetics—it's about creating an intuitive and engaging user experience. I focus on both the User Interface (UI) and User Experience (UX) to design products that are not only visually appealing but also easy to use. </p>
+           
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------------------------------------portfolio-------------------------------------- -->
+
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="title">My projects</h1>
+      <div class="work-list">
+
+        <div class="work">
+          <img src="img/port.jpg">
+          <div class="layer">
+            <h3>Portfolio website</h3>
+            <p>Created a portfolio website highlighting my projects and skills with a clean and responsive design.  It provides overview of my work and capabilities. </p>
+            <a href="https://github.com/Aayush-Hajrani/Portfolio-"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="img/trav.jpg">
+          <div class="layer">
+            <h3>Travel website</h3>
+            <p>Developed a travel website that offers basic information about various destinations. It simple layout and easy navigation to provide a pleasant user experience.
+            </p>
+            <a href="https://github.com/Aayush-Hajrani/Travel-website"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="img/todo.jpg">
+          <div class="layer">
+            <h3>To do list</h3>
+            <p>This to-do list application is designed to help users manage their daily tasks efficiently. It includes features like addind,editing and deleting tasks,all presented in a straightforward and user-friendly manner.
+            </p>
+            <a href="https://github.com/Aayush-Hajrani/Learningprojects"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+
+
+
+  <!-- ----------------------------contact------------------------------------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+
+        <div class="contact-left">
+          <h1 class="title">Contact <span class="red">Me </span></h1>
+          <h3>lets work together</h3>
+          <p class="contact-para"> I'm always excited to connect with fellow developers, potential clients, and anyone interested in my work. Whether you have a project in mind, need some advice, or just want to say hello, feel free to reach out. You can contact me through the form or connect with me on LinkedIn and GitHub. I look forward to hearing from you! </p>
+          <p class="ct-para"> <i class="fas fa-paper-plane"></i> ayushhajrani03@gmail.com</p>
+          <p> <i class="fas fa-phone-square-alt"> </i> 7405784903</p>
+
+          <div class="social-icons">
+            <a href="https://github.com/Aayush-Hajrani"> <i class="fab fa-github"></i> </a>
+            <a href="https://www.linkedin.com/in/aayush-hajrani-084339238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class="fab fa-linkedin"></i> </a>
+            <a href="https://www.instagram.com/screw_thinker_03?igsh=MTNib2lybGJxa2Zoeg=="> <i class="fab fa-instagram"></i> </a>
+            
+          </div>
+          <a class="btn btn2" href="img/Resume.pdf" download>Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" id="contactform" action="https://formspree.io/f/mdknkkwa" method="post">
+            <input type="text" name="name" id="name" placeholder="your name" required>
+            <input type="email" name="email" id="email" placeholder="your email" required>
+            <textarea name="message" rows="6" id="message" placeholder="your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="submit-message"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p> Copyright &copy; Aayush <i class="fas fa-heart"></i> </p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://kit.fontawesome.com/ae38caefbb.js" crossorigin="anonymous"></script>
+
+
+  <script src="script.js"></script>
+
+  <script>
+
+  </script>
+
+
+
+</body>
+
+</html>
